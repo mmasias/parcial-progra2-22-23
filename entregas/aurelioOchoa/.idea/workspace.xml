@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="380dca5e-b776-4f45-b6a8-ee3f287685b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex1/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex1/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex1/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex1/CustomDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex1/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex1/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/examen-parcial-p2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex1/ManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex1/ManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex2/ex2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/main/ex2/ex2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/test/ex1/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/test/ex1/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/test/ex1/CustomDateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../esqueleto/examen-parcial-p2/src/test/ex1/CustomDateTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2OupKckveNeWeWOLELLqIiVfNvD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aurel/Documents/parcial-progra2-22-23/entregas/aurelioOchoa&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="380dca5e-b776-4f45-b6a8-ee3f287685b7" name="Changes" comment="" />
+      <created>1682420258520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682420258520</updated>
+    </task>
+    <servers />
+  </component>
+</project>
