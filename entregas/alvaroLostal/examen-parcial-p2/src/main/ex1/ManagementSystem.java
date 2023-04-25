@@ -15,29 +15,33 @@ public class ManagementSystem {
 
         FileHandler fileHandler = new FileHandler();
         List<String> listClients;
-        try {
-            listClients = fileHandler.loadFileContent(path);
-            Client client;
-            String name, surname, address, phoneNumber;
-            for (String line : listClients) {
-                String[] lineData = line.split(";");
-                name = lineData[0].replaceAll("\"", "");
-                surname = lineData[1].replaceAll("\"", "");
-                address = lineData[2].replaceAll("\"", "");
-                phoneNumber = lineData[3].replaceAll("\"", "");
-                client = new Client(name, surname, address, phoneNumber);
-                this.clients.add(client);
-            }
-        }
-        catch (FileNotFoundException e) {
-            System.err.println(e.getMessage());
+        listClients = fileHandler.loadFileContent(path);
+        Client client;
+        String name, surname, address, phoneNumber;
+        for (String line : listClients) {
+            String[] lineData = line.split(";");
+            name = lineData[0].replaceAll("\"", "");
+            surname = lineData[1].replaceAll("\"", "");
+            address = lineData[2].replaceAll("\"", "");
+            phoneNumber = lineData[3].replaceAll("\"", "");
+            client = new Client(name, surname, address, phoneNumber);
+            this.clients.add(client);
         }
     }
     public void addAppointment(Appointment appointment, Client client) {
-        // Add appointment to list
-        this.appointments.add(appointment);
-        // Add appointment to client
-        client.addAppointment(appointment);
+        if (client == null) {
+            System.err.println("Client is null");
+            return;
+        }
+        if (appointment == null) {
+            System.err.println("Appointment is null");
+            return;
+        }
+        if (this.clients.contains(client)) {
+            client.addAppointment(appointment);
+        } else {
+            System.err.println("Client not found");
+        }
     }
 
 }
