@@ -11,8 +11,8 @@ public class CustomDate {
         this.year = year;
     }
 
-    public String toString(){
-        return null;
+    public String toString(String toString){
+        return toString;
     }
     public String format(String format){
         return format;
