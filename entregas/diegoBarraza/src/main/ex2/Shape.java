@@ -35,9 +35,9 @@ public Shape(String color,boolean filled){
 
     @Override
     public String toString() {
-        return "Shape{" +
+        return "Shape[" +
                 "color='" + color + '\'' +
                 ", filled=" + filled +
-                '}';
+                ']';
     }
 }

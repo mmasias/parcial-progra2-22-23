@@ -23,9 +23,9 @@ public class Circle extends Shape{
     }
     @Override
     public String toString() {
-        return "Circle{" +"Shape{" +
+        return "Circle[" +"Shape[" +
                 "color='" + color + '\'' +
-                ", filled=" + filled +'\'' + ", radius="+ radius +
-                '}';
+                ", filled=" + filled +"]"+ "["+", radius="+ radius +
+                ']';
     }
 }
