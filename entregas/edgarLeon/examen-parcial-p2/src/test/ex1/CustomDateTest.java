@@ -7,6 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CustomDateTest {
 
+    public CustomDateTest(int i, int j, int k) {
+    }
+
     @Test
     @DisplayName("Display the date in the format dd/mm/yyyy")
     void testToString() {

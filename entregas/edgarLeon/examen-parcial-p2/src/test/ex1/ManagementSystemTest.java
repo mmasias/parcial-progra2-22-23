@@ -34,7 +34,7 @@ class ManagementSystemTest {
     void addAppointment() {
 
         Client client = new Client("Emily", "Smith", "123 Main St, Los Angeles", "123456789");
-        Pet dog = new Dog("Fido", "Black", 5);
+        Dog dog = new Dog("Fido", "Black", 5);
         CustomDate date = new CustomDate(25, 3, 2023);
 
         Appointment appointment = new Appointment(dog, date, "Vaccination");
