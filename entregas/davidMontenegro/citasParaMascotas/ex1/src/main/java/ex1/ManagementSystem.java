@@ -10,6 +10,7 @@ public class ManagementSystem {
 
 
     public ManagementSystem() {
+
     }
 
     public void loadData(String path) {

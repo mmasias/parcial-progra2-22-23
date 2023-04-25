@@ -1,17 +1,18 @@
 package ex1;
 
-public class clients {
+public class Clients {
     private String name;
     private String surname;
     private String address;
 
-    public clients(String name, String surname, String address){
+    public Clients(String name, String surname, String address){
         this.name = name;
         this.surname = surname;
         this.address = address;
     }
-    public String getName(String name){
-        return name;
+    public String getFullName(String name, String surname){
+        return (name + " " + surname);
+
     }
 
     public void setName(String name) {
