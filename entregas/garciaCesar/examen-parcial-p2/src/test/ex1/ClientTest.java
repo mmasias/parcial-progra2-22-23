@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import src.main.ex1.Client;
 
-public class ClientTest {
+class ClientTest {
 	@Test
 	@DisplayName("Two clients are equal if they have the same name and surname")
 	void testEquals() {

@@ -3,9 +3,7 @@ package src.main.ex1;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ManagementSystem {
 	private List<Pet> pets;
@@ -83,6 +81,39 @@ public class ManagementSystem {
 	}
 
 
+	public Collection<Object> getClients() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
+	public static List<String[]> loadData(String filePath) {
+		List<String[]> list = new ArrayList<>();
+		try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+			String line;
+			while ((line = br.readLine()) != null) {
+				String[] values = line.split(",");
+				list.add(values);
+				System.out.println("Archivo leído correctamente");
+			}
+		} catch (IOException e) {
+			System.err.println("Error al leer el archivo: " + e.getMessage());
+		} catch (Exception e) {
+			System.err.println("Error: " + e.getMessage());
+		}
+		String[][] data = new String[list.size()][];
+		for (int i = 0; i < list.size(); i++) {
+			data[i] = list.get(i);
+		}
+		return Arrays.asList(data);
+
+	}
+	public void addAppointment(Appointment appointment, Client client) {
+		// Add appointment to list
+
+	}
+
+	public Collection<Object> getAppointments() {
+		return null;
+	}
 }
 
