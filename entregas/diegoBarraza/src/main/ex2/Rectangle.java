@@ -30,7 +30,7 @@ private double length;
     public String toString() {
         return "Rectangle[" +"Shape[" +
                 "color='" + color + '\'' +
-                ", filled=" + filled +']' +"["+ width+ length 
+                ", filled=" + filled +']' +"["+ width+ length +
                 '}';
     }
 }
