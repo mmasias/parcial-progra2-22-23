@@ -25,8 +25,6 @@ public class Client {
             return true;
         }
         return this.name.equals(otherClient.name) &&
-            this.surname.equals(otherClient.surname) &&
-            this.address.equals(otherClient.address) &&
-            this.phoneNumber.equals(otherClient.phoneNumber);
+            this.surname.equals(otherClient.surname);
     }
 }

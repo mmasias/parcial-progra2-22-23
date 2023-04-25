@@ -12,10 +12,12 @@ public class CustomDate {
     }
 
     public String toString(){
-        return day + ", " + month + ", " + year;
+        return String.format("%02d%s%02d%s%d", day, "/", month, "/", year);
     }
 
+
     public String format(String separator){
-        return day + separator + month + separator + year;
+        return String.format("%02d%s%02d%s%d", day, separator, month, separator, year);
     }
+
 }

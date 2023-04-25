@@ -11,26 +11,22 @@ public class ManagementSystem {
 
 
     public ManagementSystem() {
+        fileHandler = new FileHandler();
+        clients = new ArrayList<>();
+        appointments = new ArrayList<>();
     }
 
     public void loadData(String path) {
-        /*
-            Load clients from file
-
-            // For each line in file
-
+        List<String> lines = fileHandler.loadFileContent(path);
+        for (String line : lines) {
             String[] data = line.split(";");
-
-             // Extract data from line and remove quotes
             String name = data[0].replaceAll("\"", "");
             String surname = data[1].replaceAll("\"", "");
             String address = data[2].replaceAll("\"", "");
             String phoneNumber = data[3].replaceAll("\"", "");
-
-
-            // Create client and add to list
-
-         */
+            Client client = new Client(name, surname, address, phoneNumber);
+            clients.add(client);
+        }
     }
 
     public List<Client> getClients(){
@@ -38,15 +34,20 @@ public class ManagementSystem {
     }
 
     public void addAppointment(Appointment appointment, Client client) {
-        // Add appointment to list
+        if (isClient(client)) {
+            appointment.setOwner(client);
+            appointments.add(appointment);
+        } else {
+            throw new IllegalArgumentException("Invalid client");
+        }
     }
 
     public List<Appointment> getAppointments(){
         return appointments;
     }
 
-    private boolean isClient(Client){
-        return true;
+    private boolean isClient(Client client){
+        return clients.contains(client);
     }
 
 }
