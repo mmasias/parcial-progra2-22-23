@@ -24,12 +24,15 @@ public class Rectangle extends Shape{
         this.lenght = lenght;
     }
 
-    public void getArea(){
+    public double getArea(){
         double a;
         a=width*lenght;
+        return a;
     }
-    public void getPerimeter(){
+    public double getPerimeter(){
         double p;
-        p= (2*width)+(2*lenght);
+        p= 2*width+2*lenght;
+        return p;
     }
+
 }
