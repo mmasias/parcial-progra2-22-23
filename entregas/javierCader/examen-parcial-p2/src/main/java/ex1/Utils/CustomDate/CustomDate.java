@@ -11,6 +11,12 @@ public class CustomDate {
         this.year = year;
     }
 
+
+    public boolean equalsString(String date) {
+        String[] dateArray = date.split("/");
+        return this.day == Integer.parseInt(dateArray[0]) && this.month == Integer.parseInt(dateArray[1]) && this.year == Integer.parseInt(dateArray[2]);
+    }
+
     @Override
     public String toString() {
         return this.day + "/" + this.month + "/" + this.year;

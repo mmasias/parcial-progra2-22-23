@@ -48,7 +48,7 @@ public class ManagementSystem {
         List<String> appointments = new ArrayList<>();
 
         this.appointments.forEach(appointment -> {
-            if (appointment.getDate().equals(date.toString())) {
+            if (appointment.getDate().equalsString(date)) {
                 appointments.add(appointment.toString());
             }
         });

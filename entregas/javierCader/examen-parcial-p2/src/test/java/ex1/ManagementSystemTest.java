@@ -63,7 +63,7 @@ class ManagementSystemTest {
 
         managementSystem.addAppointment(appointment, client);
 
-        String expectedAppointment = "Fido, Black, 5, 25/3/2023, Vaccination, Emily Smith, 123 Main St, Los Angeles, 123456789";
+        String expectedAppointment = "[25/3/2023] - Emily Smith - Fido - Vaccination";
         String actualAppointment = managementSystem.getAppointmentByDate("25/3/2023").get(0);
 
         assertEquals(expectedAppointment, actualAppointment);
