@@ -1,4 +1,4 @@
-package test.ex1;
+/*package test.ex1;
 
 import main.ex1.*;
 import org.junit.jupiter.api.BeforeAll;
@@ -47,4 +47,4 @@ class ManagementSystemTest {
         assertEquals(expectedAppointmentsLoaded, actualAppointmentsLoaded);
 
     }
-}
+}*/

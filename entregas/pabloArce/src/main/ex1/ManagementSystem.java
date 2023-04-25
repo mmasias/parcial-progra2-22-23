@@ -1,4 +1,4 @@
-package main.ex1;
+/*package main.ex1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,8 +13,8 @@ public class ManagementSystem {
     }
 
     public void loadData(String path) {
-        /*
-            Load clients from file
+
+            //Load clients from file
 
             // For each line in file
 
@@ -28,11 +28,10 @@ public class ManagementSystem {
 
 
             // Create client and add to list
-
-         */
     }
     public void addAppointment(Appointment appointment, Client client) {
        // Add appointment to list
     }
 
 }
+*/

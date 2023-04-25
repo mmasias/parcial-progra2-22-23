@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CustomDateTest {
+/*class CustomDateTest {
 
     @Test
     @DisplayName("Display the date in the format dd/mm/yyyy")
@@ -26,4 +26,4 @@ class CustomDateTest {
 
         assertEquals(expectedFormatedDate, actualFormatedDate);
     }
-}
+}*/

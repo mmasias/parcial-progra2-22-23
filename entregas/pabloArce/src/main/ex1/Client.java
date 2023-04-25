@@ -15,7 +15,7 @@ public class Client {
         return this.name + " " + this.Surname;
     }
     public boolean equals(Client client) {
-        return this.name.equals(client.name) && this.Surname.equals(client.Surname) && this.address.equals(client.address) && this.phoneNumber.equals(client.phoneNumber);
+        return this.name.equals(client.name) && this.Surname.equals(client.Surname);
     }
 }
 

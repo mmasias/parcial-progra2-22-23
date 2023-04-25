@@ -10,7 +10,12 @@ public class CustomDate {
         this.year = year;
     }
     public String toString() {
-        return this.day + "/" + this.month + "/" + this.year;
+        String currentMonth;
+        if (this.day < 10) {
+            currentMonth = "0" + String.valueOf(this.day);
+        }
+        else{currentMonth = String.valueOf(this.month);}
+        return this.day + "/" + currentMonth + "/" + this.year;
     }
     public String format(String format){return "hola";}
 }

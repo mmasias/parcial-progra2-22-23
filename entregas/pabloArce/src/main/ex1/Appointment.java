@@ -11,7 +11,7 @@ public class Appointment {
         this.description = description;
     }
     public String toString() {
-        return "Appointment [owner=" + owner + ", pet=" + pet + ", date=" + date + ", description=" + description + "]";
+        return "[" + date.toString() + "] - " + owner.getFullName() + " - " + pet.name + " - " + description;
     }
     public void setOwner(Client owner) {
         this.owner = owner;
