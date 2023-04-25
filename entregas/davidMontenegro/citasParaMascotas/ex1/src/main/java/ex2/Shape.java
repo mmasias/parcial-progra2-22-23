@@ -26,4 +26,6 @@ public abstract class Shape {
 
     }
 
+    // The end...
+
 }
