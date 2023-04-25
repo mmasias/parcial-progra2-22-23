@@ -19,7 +19,7 @@ public class Client {
     }
 
     public boolean equals(Client client) {
-        if (client.getFullName().toString() == this.getFullName().toString()) {
+        if (this.name.equals(client.name) && this.surname.equals(client.surname)) {
             return true;
         }
         return false;
