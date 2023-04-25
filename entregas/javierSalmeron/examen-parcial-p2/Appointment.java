@@ -1,4 +1,4 @@
-//Appointment
+//Appointment - Test OK
 
 public class Appointment {
     private Client owner;
