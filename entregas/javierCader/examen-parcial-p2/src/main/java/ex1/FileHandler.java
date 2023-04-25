@@ -1,4 +1,4 @@
-package ex1.Utils;
+package ex1;
 
 import java.io.*;
 import java.util.ArrayList;

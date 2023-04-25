@@ -1,6 +1,6 @@
 package ex1.Utils.Pets;
 
-public class Cat extends Pets {
+public class Cat extends Pet {
     public Cat(String name, String breed, int age) {
         super(name, breed, age);
     }
