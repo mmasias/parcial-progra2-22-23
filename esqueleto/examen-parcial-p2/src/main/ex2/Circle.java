@@ -1,6 +1,6 @@
 package main.ex2;
 
-public class Circle extends Sharpe{
+public class Circle extends Shape{
 
 
     private double radius;
@@ -16,10 +16,7 @@ public class Circle extends Sharpe{
         return 0;
     }
 
-    @Override
-    double getArea() {
-        return 0;
-    }
+
 
     public double getRadius() {
         return radius;
