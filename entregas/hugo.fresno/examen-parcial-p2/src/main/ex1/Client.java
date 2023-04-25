@@ -2,10 +2,10 @@ package main.ex1;
 
 public class Client {
 
-    String name;
-    String surname;
-    String address;
-    String phoneNumber;
+    private String name;
+    private String surname;
+    private String address;
+    private String phoneNumber;
 
     public Client(String name, String surname, String address, String phoneNumber) {
         this.name = name;
