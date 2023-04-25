@@ -9,7 +9,7 @@ public class ManagementSystem {
 
     private List<Client> client;
 
-    private List<Appointment> appintments;
+    private List<Appointment> appointments;
 
     public ManagementSystem() {
     }
