@@ -1,5 +1,6 @@
 package main.ex1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ManagementSystem {
@@ -15,7 +16,7 @@ public class ManagementSystem {
         List<String> lines = this.fileHandler.loadFileContent(path);
         for (String line : lines) {
             String[] data = line.split(",");
-            Client client = new Client(data[0], data[1], data[2]);
+            Client client = new Client(data[0], data[1], data[2], data[3]);
             this.clients.add(client);
         }
     }
@@ -35,7 +36,7 @@ public class ManagementSystem {
 
     private boolean isClient(Client client) {
         for (Appointment appointment : this.appointments) {
-            if (appointment.getClient().equals(client)) {
+            if (appointment.owner.equals(client)) {
                 return true;
             }
         }
