@@ -1,12 +1,12 @@
 package main.ex1;
 
-public class appoiment {
+public class Appointment {
     private String date;
     private String time;
     private String description;
     private String client;
 
-    public appoiment(String date, String time, String description, String client) {
+    public Appointment(String date, String time, String description, String client) {
         this.date = date;
         this.time = time;
         this.description = description;

@@ -4,41 +4,26 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ManagementSystem<quotes> {
+public class ManagementSystem {
     private FileHandler fileHandler;
-    private Object clients;
 
 
 
     public ManagementSystem() {
-        this.fileHandler = new FileHandler();
-        this.clients = new ArrayList<Client>();
     }
 
-    /**
-     * @param <line>
-     * @param path
-     */
-    public <line> void loadData(String path) {
-        List<String> lines = this.fileHandler.loadFileContent(path);
-        if (lines == null) {
-            return;
-        }
-        for (String line : lines) {
-            String[] data = line.split(",");
-            if (data.length != 4) {
-                System.err.println("Invalid data");
-                continue;
-            }
-            final Client client = new Client(data[0], data[1], data[2], data[3]);
-        }
-
-  
-            
-
-
-
-      
+    public void loadData(String path) {
+        /*
+            Load clients from file
+            // For each line in file
+            String[] data = line.split(";");
+             // Extract data from line and remove quotes
+            String name = data[0].replaceAll("\"", "");
+            String surname = data[1].replaceAll("\"", "");
+            String address = data[2].replaceAll("\"", "");
+            String phoneNumber = data[3].replaceAll("\"", "");
+            // Create client and add to list
+         */
     }
     public void addAppointment(Appointment appointment, Client client) {
        // Add appointment to list
