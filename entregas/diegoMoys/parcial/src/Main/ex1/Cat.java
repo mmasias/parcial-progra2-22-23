@@ -1,14 +1,9 @@
 package Main.ex1;
 
-public class Cat {
-    private String name;
-    private String color;
-    private int age;
+public class Cat extends Pet{
 
     public Cat(String name, String color, int age) {
-        this.name = name;
-        this.color = color;
-        this.age = age;
+        super(name, color, age);
     }
 
     public String getName() {

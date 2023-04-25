@@ -17,7 +17,7 @@ public class Client {
         return this.name + " " + this.surname;
     }
 
-    public boolean equals(Client client) {
-        return this.name.equals(client.name) && this.surname.equals(client.surname) && this.address.equals(client.address) && this.phoneNumber.equals(client.phoneNumber);
+    public String compareEqualsClient(Client client) {
+        return this.getFullName();
     }
 }

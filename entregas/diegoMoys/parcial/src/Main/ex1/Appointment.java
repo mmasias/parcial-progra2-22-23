@@ -6,12 +6,12 @@ public class Appointment {
     private Pet pet;
     private String description;
 
-    public Appointment(CustomDate date, Client client, Pet pet, String description) {
-        this.date = date;
-        this.client = client;
+    public Appointment(Pet pet, CustomDate date, String description) {
         this.pet = pet;
+        this.date = date;
         this.description = description;
     }
+
 
     public void setOwner(Client client) {
         this.client = client;

@@ -10,7 +10,7 @@ public class AppointmentTest {
     @Test
     @DisplayName("Print the appointment in the format: [dd/mm/yyyy] - owner full name - pet name - description")
     void testToString() {
-        Pet dog = new dog("Fido", "Black", 5);
+        Pet dog = new Dog("Fido", "Black", 5);
         CustomDate date = new CustomDate(25, 3, 2023);
 
         Client client = new Client("Emily", "Smith", "123 Main St, Los Angeles", "123456789");
