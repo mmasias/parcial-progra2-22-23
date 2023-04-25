@@ -13,7 +13,7 @@ public class CustomDate {
     }
 
     public String toString() {
-        return null;
+        return toString();
     }
 
     String format(String) { //porque falla tambien el puto parentesis

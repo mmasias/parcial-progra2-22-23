@@ -7,10 +7,18 @@ import java.util.List;
 public class ManagementSystem {
     private FileHandler fileHandler;
 
+    private List<Client> clients(){
 
 
+    }
 
-    public ManagementSystem() {
+    private List<Appointment> appointments(){
+
+        return null;
+    }
+
+    public ManagementSystem(FileHandler fileHandler) {
+        this.fileHandler = fileHandler;
     }
 
     public void loadData(String path) {
@@ -27,7 +35,19 @@ public class ManagementSystem {
          */
     }
     public void addAppointment(Appointment appointment, Client client) {
-        // Add appointment to list
+       addAppointment("Laura");
+    }
+
+
+
+    public List<Appointment> getAppointments(){
+
+        return null;
+    }
+
+    private boolean isClient(Client){
+
+        return this.isClient();
     }
 
 }
