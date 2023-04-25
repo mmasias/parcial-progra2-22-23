@@ -1,10 +1,10 @@
 package examen_parcial_p2.src;
 
-import examen_parcial_p2.src.main.ex1.Appointment;
-import examen_parcial_p2.src.main.ex1.FileHandler;
+import examen_parcial_p2.src.main.ex1.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,7 +15,6 @@ public class Main {
             String[] rawData;
             rawData = appointment.split(",");
 
-
             String name;
             name = rawData[0];
 
@@ -25,8 +24,22 @@ public class Main {
             String address;
             address = rawData[2];
 
-            String phone;
-            phone = rawData[3];
+            String phoneNumber;
+            phoneNumber = rawData[3];
+
+            appointments.add(new Appointment(name, surname, address, phoneNumber));
+        }
+
+        Scanner scanner = new Scanner(System.in);
+        String nextAppointment = scanner.nextLine();
+        printAppointments(nextAppointment, appointments);
+    }
+
+    public static void printAppointments(String nextAppointment, List<Appointment> appointments){
+        for (Appointment appointment: appointments){
+            if (appointment.name().equals(nextAppointment)){
+                System.out.println(appointment);
+            }
         }
     }
 }
