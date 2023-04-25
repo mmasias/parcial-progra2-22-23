@@ -12,6 +12,7 @@ public class Square extends Rectangle{
         this.length = side;
     }
     // public void setLenght is not necessary as setSide covers it
+    @Override
     public String toString(){
         return "Square [ Rectangle [ Shape [ color =" + this.color + ", filled=" + this.filled + "], width=" + this.width + ", length=" + this.length + "]]";
     }
