@@ -4,17 +4,22 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ManagementSystem {
+public class ManagementSystem<quotes> {
     private FileHandler fileHandler;
+    private Object clients;
 
 
 
     public ManagementSystem() {
     }
 
-    public void loadData(String path) {
+    /**
+     * @param <line>
+     * @param path
+     */
+    public <line> void loadData(String path) {
     
-            Load clients from file
+            //Load clients from file
             List<String> lines = fileHandler.loadFileContent(path);
 
 
@@ -27,17 +32,20 @@ public class ManagementSystem {
             }
             String[] data = line.split(";");
 
-            Extract data from line and remove quotes
-            String name = data[0].replaceAll("\"", "");
-            String surname = data[1].replaceAll("\"", "");
-            String address = data[2].replaceAll("\"", "");
-            String phoneNumber = data[3].replaceAll("\"", "");
+            final Extract data from line and remove final quotes
+            String final Object name = data[0].replaceAll("\"", "");
+            final String surname = data[1].replaceAll("\"", "");
+            final String address = data[2].replaceAll("\"", "");
+            final String phoneNumber = data[3].replaceAll("\"", "");
    
 
-            
+
             // Create client and add to list
             Client client = new Client(name, surname, address, phoneNumber);
-            this.clients.add(client);
+            clients.add(client);
+            
+            
+            
 
 
 
