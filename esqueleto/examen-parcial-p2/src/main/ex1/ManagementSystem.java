@@ -13,6 +13,10 @@ public class ManagementSystem {
     }
 
     public void loadData(String path) {
+
+
+
+        FileHandler readfile = new  FileHandler();
         /*
             Load clients from file
 
