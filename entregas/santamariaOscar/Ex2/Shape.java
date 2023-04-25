@@ -1,6 +1,6 @@
 public abstract class Shape {
-    private String color;
-    private boolean filled;
+    protected String color;
+    protected boolean filled;
 
     public String getColor() {
         return color;
