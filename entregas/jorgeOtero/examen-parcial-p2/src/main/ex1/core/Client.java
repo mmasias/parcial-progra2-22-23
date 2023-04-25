@@ -17,8 +17,8 @@ public class Client {
     }
 
     public boolean equals(Client client) {
-        if (this.getFullName() != client.getFullName()){
-            return false;}
-        return true;
+        if (this.getFullName() == client.getFullName()){
+            return true;}
+        return false;
     }
 }

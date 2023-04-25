@@ -11,10 +11,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ManageSystemTest {
     @Test
     void loadClients() {
-        List<Client> clientList = new ArrayList<>();
-        FileHandler fileHandlerExample = new FileHandler();
 
-        for (String client: fileHandlerExample.loadFileContent("src/main/ex1/data/clients.dat")) {
+        List<Client> clientList = new ArrayList<>();
+        FileHandler fileHandler = new FileHandler();
+
+        for (String client: fileHandler.loadFileContent("src/main/ex1/data/clients.dat")) {
             String[] rawData;
             rawData = client.split(",");
 
@@ -31,9 +32,7 @@ public class ManageSystemTest {
             phoneNumber = rawData[3];
 
             clientList.add(new Client(name, surname , address, phoneNumber));
-
         }
-        System.out.println(clientList.size());
         int expected = 64 ;
         assertEquals(expected, clientList.size());
 

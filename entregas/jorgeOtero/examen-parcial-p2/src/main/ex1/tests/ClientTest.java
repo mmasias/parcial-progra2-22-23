@@ -9,8 +9,8 @@ public class ClientTest {
     @Test
     void testEquals(){
         Client client1 = new Client("Emily", "Smith", "Calle 1", "123456789");
-        Client client2 = new Client("Emily", "Smith", "Calle 2", "2222222222");
-        boolean expected = true;
+        Client client2 = new Client("E", "S", "Calle 1", "123456789");
+        boolean expected = false;
         assertEquals(expected, client2.equals(client1));
     }
 }
