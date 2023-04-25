@@ -1,3 +1,5 @@
+package Core;
+
 public abstract class Shape {
     private String colour;
     private boolean filled;

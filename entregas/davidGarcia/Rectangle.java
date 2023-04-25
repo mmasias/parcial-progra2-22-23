@@ -1,3 +1,5 @@
+package Core;
+
 public class Rectangle extends Shape {
     private double whidth;
     private double lenght;
@@ -26,5 +28,9 @@ public class Rectangle extends Shape {
     public double area(){
         return whidth*lenght;
     }
+    public String toString (String colour, boolean filled, double whidth, double lenght){
+        return "Colour: "+colour+"\nFilled: "+filled+"\nWhidth: "+whidth+"\nLenght: "+lenght;
+    }
+
 }
 
