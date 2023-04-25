@@ -4,7 +4,7 @@ public class Rectangle extends Shape{
     protected double width;
     protected double length;
 
-    public Rectangle(String color, boolean filled, double width, double length) {
+    public Rectangle(double width, double length, String color, boolean filled) {
         super(color, filled);
         this.width = width;
         this.length = length;
@@ -27,11 +27,13 @@ public class Rectangle extends Shape{
     }
 
     public double getArea(){
-        return 0;
+        Double area = width * length;
+        return area;
     }
 
     public double getPerimeter(){
-        return 0;
+        Double perimeter = 2 * (width + length);
+        return perimeter;
     }
 
     public String toString(){

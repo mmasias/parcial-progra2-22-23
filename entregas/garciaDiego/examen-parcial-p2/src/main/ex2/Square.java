@@ -3,7 +3,7 @@ package main.ex2;
 public class Square extends Rectangle{
 
     public Square(String color, boolean filled, double width, double length) {
-        super(color, filled, width, length);
+        super(width, length, color, filled);
     }
 
     public double getSide() {
@@ -11,11 +11,11 @@ public class Square extends Rectangle{
     }
 
     public void setSide(double side) {
-        this.side = width;
+        this.width = side;
     }
 
     public void setLength(double length) {
-        this.length = width;
+        this.length = length;
     }
 
     public String toString(){
