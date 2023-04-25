@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import main.Client;
+import test.Appointment;
+
 public class ManagementSystem {
     private FileHandler fileHandler;
 
@@ -33,6 +36,14 @@ public class ManagementSystem {
     }
     public void addAppointment(Appointment appointment, Client client) {
        // Add appointment to list
+    }
+
+    public Object getAppointments() {
+        return null;
+    }
+
+    public Object getClients() {
+        return null;
     }
 
 }

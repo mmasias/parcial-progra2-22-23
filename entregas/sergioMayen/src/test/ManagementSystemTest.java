@@ -2,6 +2,7 @@ package test;
 
 import main.Client;
 import main.CustomDate;
+import main.Dog;
 import main.Pet;
 import main.ex1.*;
 import org.junit.jupiter.api.BeforeAll;
