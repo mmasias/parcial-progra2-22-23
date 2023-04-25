@@ -1,28 +1,29 @@
 package main.ex2;
 
 public class Rectangle extends Shape{
-    String color;
-    boolean filled;
+    protected double width;
+    protected double length;
 
-    public Rectangle(String color, boolean filled) {
-        this.color = color;
-        this.filled = filled;
+    public Rectangle(String color, boolean filled, double width, double length) {
+        super(color, filled);
+        this.width = width;
+        this.length = length;
     }
 
-    public String getColor() {
-        return color;
+    public double getWidth() {
+        return width;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setWidth(double width) {
+        this.width = width;
     }
 
-    public boolean isFilled() {
-        return filled;
+    public double getLength() {
+        return length;
     }
 
-    public void setFilled(boolean filled) {
-        this.filled = filled;
+    public void setLength(double length) {
+        this.length = length;
     }
 
     public double getArea(){
@@ -33,7 +34,7 @@ public class Rectangle extends Shape{
         return 0;
     }
 
-    String toString(){
-        return "Rectangle";
+    public String toString(){
+        return "Rectangle [ Shape [ color = " + color + ", filled = " + filled + " ],width = " + width + ", length = " + length + " ]";
     }
 }
