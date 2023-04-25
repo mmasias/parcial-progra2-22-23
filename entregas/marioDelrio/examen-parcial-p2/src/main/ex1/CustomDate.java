@@ -15,7 +15,7 @@ public class CustomDate {
     public String toString() {
         return "CustomDate{" + "day=" + day + ", month=" + month + ", year=" + year + '}';
     }
-    String format(String format) {
+    public String format(String format) {
         return format.replace("dd", String.valueOf(day)).replace("mm", String.valueOf(month)).replace("yyyy", String.valueOf(year));
     }
 }

@@ -16,6 +16,10 @@ public class Client {
         return name;
     }
     boolean equals(Client client) {
-        return this.name.equals(client.name) && this.surname.equals(client.surname) && this.address.equals(client.address) && this.phoneNumber.equals(client.phoneNumber);
+        return this.name.equals(client.name) && this.surname.equals(client.surname);
     }
 }
+
+
+
+

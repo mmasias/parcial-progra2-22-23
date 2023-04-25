@@ -7,8 +7,8 @@ public class ManagementSystem {
     private FileHandler fileHandler;
     List<Client> clients = new ArrayList<>();
     List<Appointment> appointments = new ArrayList<>();
-
-
+    private Appointment appointment;
+    private Client client;
 
     public ManagementSystem() {
     }
@@ -19,7 +19,8 @@ public class ManagementSystem {
 
             // For each line in file
 
-            String[] data = line.split(";");
+
+        String[] data = line.split(";");
 
              // Extract data from line and remove quotes
             String name = data[0].replaceAll("\"", "");
@@ -30,11 +31,24 @@ public class ManagementSystem {
 
             // Create client and add to list
 
-         */
+            */
     }
+
+
+
     public void addAppointment(Appointment appointment, Client client) {
         // Add appointment to list
+        this.appointment = appointment;
+        this.client = client;
     }
 
-
+    public List<Client> getClients() {
+        return clients;
+    }
+    public List <Appointment> getAppointments(){
+        return appointments;
+    }
+    boolean isClient(Client client) {
+        return this.client.equals(client);
+    }
 }
