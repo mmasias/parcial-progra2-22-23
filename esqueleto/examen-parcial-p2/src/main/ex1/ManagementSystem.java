@@ -11,6 +11,8 @@ public class ManagementSystem<quotes> {
 
 
     public ManagementSystem() {
+        this.fileHandler = new FileHandler();
+        this.clients = new ArrayList<Client>();
     }
 
     /**
@@ -18,33 +20,20 @@ public class ManagementSystem<quotes> {
      * @param path
      */
     public <line> void loadData(String path) {
-    
-            //Load clients from file
-            List<String> lines = fileHandler.loadFileContent(path);
-
-
-            // For each line in file
-            for (String line : lines) {
-              
-                if (line.startsWith("Name")) {
-                    continue;  
-
+        List<String> lines = this.fileHandler.loadFileContent(path);
+        if (lines == null) {
+            return;
+        }
+        for (String line : lines) {
+            String[] data = line.split(",");
+            if (data.length != 4) {
+                System.err.println("Invalid data");
+                continue;
             }
-            String[] data = line.split(";");
+            final Client client = new Client(data[0], data[1], data[2], data[3]);
+        }
 
-            final Extract data from line and remove final quotes
-            String final Object name = data[0].replaceAll("\"", "");
-            final String surname = data[1].replaceAll("\"", "");
-            final String address = data[2].replaceAll("\"", "");
-            final String phoneNumber = data[3].replaceAll("\"", "");
-   
-
-
-            // Create client and add to list
-            Client client = new Client(name, surname, address, phoneNumber);
-            clients.add(client);
-            
-            
+  
             
 
 
