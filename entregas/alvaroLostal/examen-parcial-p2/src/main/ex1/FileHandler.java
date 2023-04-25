@@ -55,5 +55,4 @@ public class FileHandler {
         }
         return this.lines;
     }
-
 }
