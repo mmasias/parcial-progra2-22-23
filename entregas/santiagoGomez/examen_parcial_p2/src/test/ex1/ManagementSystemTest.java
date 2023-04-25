@@ -1,12 +1,11 @@
 package examen_parcial_p2.src.test.ex1;
 
-import examen_parcial_p2.src.main.*;
-import org.junit.jupiter.api.BeforeAll;
+import examen_parcial_p2.src.main.ex1.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ManagementSystemTest {
 
