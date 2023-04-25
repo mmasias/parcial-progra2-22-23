@@ -13,5 +13,5 @@ public class CustomDate {
     public String toString() {
         return day+"/"+month+"/"+year;
     }
-    //String format (String)
+    //+ String format(String)
 }
