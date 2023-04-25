@@ -1,29 +1,29 @@
 package main.ex2;
 
 public abstract class shape {
-    protected abstract double getPerimeter();
-    protected abstract double getArea();
+    public abstract double getPerimeter();
+    public abstract double getArea();
 
     protected String color;
     protected boolean filled;
 
-    String getColor() {
+    public String getColor() {
         return color;
     }
 
-    void setColor(String color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
-    boolean getFilled() {
+    public boolean getFilled() {
         return filled;
     }
 
-    void setFilled(boolean filled) {
+    public void setFilled(boolean filled) {
         this.filled = filled;
     }
 
-    String toString(String color, boolean filled) {
+    public String toString(String color, boolean filled) {
         return "Shape[color=" + color + ", filled=" + filled + "]";
     }
 }
