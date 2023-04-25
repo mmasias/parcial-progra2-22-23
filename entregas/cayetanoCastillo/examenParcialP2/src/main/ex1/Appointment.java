@@ -1,9 +1,9 @@
 package main.ex1;
 
-public class Appointment extends Pet  {
+public class Appointment extends Pet   {
 
 	Client owner = new Client();
-	Pet pet = new Pet(name, color, age);
+	Pet pet = new Pet(nameP, color, age);
 	CustomDate date = new CustomDate(age, age, age);
 	String description = new String();
 	
@@ -13,7 +13,9 @@ public class Appointment extends Pet  {
 		
 	}
 	public String toString() {
-		return null;
+		String f = "["+ date +"]"+" - "+ owner +" - " + nameP +" - " + description;
+		
+		return f;
 	}
 	
 	

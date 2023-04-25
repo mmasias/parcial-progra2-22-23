@@ -2,29 +2,29 @@ package main.ex1;
 
 public class Pet {
 
-	protected String name;
+	protected String nameP;
 	protected String color;
 	protected int age;
 	
 	
 	
-	public Pet(String name, String color, int age) {
+	public Pet(String nameP, String color, int age) {
 		super();
-		this.name = name;
+		this.nameP = nameP;
 		this.color = color;
 		this.age = age;
 	}
 
 
 
-	public String getName() {
-		return name;
+	public String getNameP() {
+		return nameP;
 	}
 
 
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNameP(String nameP) {
+		this.nameP = nameP;
 	}
 	
 	

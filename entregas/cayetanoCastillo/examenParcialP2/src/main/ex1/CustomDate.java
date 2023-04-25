@@ -13,11 +13,17 @@ public class CustomDate {
 	}
 	@Override
 	public String toString() {
-		
-		return super.toString();
+		String a = " ";
+		 String day = new String();
+		 String month = new String();
+		 String year = new String();
+		 a = day + " / " + month + " / " + year;
+		return a;
 	}
 	
-	
+	public void Read(String a) {
+		System.out.println(a);
+	}
 	
 	
 }
