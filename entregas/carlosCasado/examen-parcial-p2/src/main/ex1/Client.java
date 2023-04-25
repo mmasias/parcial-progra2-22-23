@@ -18,8 +18,10 @@ public class Client {
         return name + " " + surname;
     }
 
-    public boolean equals(Client) {
-        //TO-DO
+/*
+    public boolean equals(Client client) {
+        //return client.getFullName().equals()
+        //if (client.getFullName().equals())
     }
-
+*/
 }

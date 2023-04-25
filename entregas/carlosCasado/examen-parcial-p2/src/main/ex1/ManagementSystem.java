@@ -7,20 +7,20 @@ import java.util.List;
 
 public class ManagementSystem {
     private FileHandler fileHandler;
-    List<Client> clients = new ArrayList<Client>();
+    List<Client> clients = new ArrayList<>();
 
     public ManagementSystem() {
     }
     public void loadData(String path) {
 
-    for (String rawDataPerClient: fileHandler.loadFileContent("src/data/clients.dat")) {
+    for (String rawDataPerClient: fileHandler.loadFileContent("data/clients.dat")) {
         String[] data = rawDataPerClient.split(";");
         String name = data[0].replaceAll("\"", "");
         String surname = data[1].replaceAll("\"", "");
         String address = data[2].replaceAll("\"", "");
         String phoneNumber = data[3].replaceAll("\"", "");
 
-        clients.add(new Clie)
+        clients.add(new Client(name, surname, address, phoneNumber));
 
     }
 
