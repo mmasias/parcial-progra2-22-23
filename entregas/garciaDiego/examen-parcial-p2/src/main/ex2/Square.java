@@ -2,8 +2,8 @@ package main.ex2;
 
 public class Square extends Rectangle{
 
-    public Square(String color, boolean filled, double width, double length) {
-        super(width, length, color, filled);
+    public Square(String color, boolean filled, double width) {
+        super(width, width, color, filled);
     }
 
     public double getSide() {
@@ -19,7 +19,7 @@ public class Square extends Rectangle{
     }
 
     public String toString(){
-        return "Rectangle [ Shape [ color = " + color + ", filled = " + filled + " ],width = " + width + ", length = " + length + " ]";
+        return "Square [ Rectangle [ Shape [ color = " + color + ", filled = " + filled + " ],width = " + width + ", length = " + width + " ] ]";
     }
 
 }
