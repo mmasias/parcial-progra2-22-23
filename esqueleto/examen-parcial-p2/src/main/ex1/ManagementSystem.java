@@ -1,17 +1,20 @@
 package main.ex1;
 
-import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public class ManagementSystem {
     private FileHandler fileHandler;
     ArrayList<Client> allClients;
+    Appointment appointment;
+
+    ArrayList<Appointment> appointments;
 
 
 
     public ManagementSystem() {
+
     }
 
     public void loadData(String path) {
@@ -51,7 +54,22 @@ public class ManagementSystem {
 
     }
     public void addAppointment(Appointment appointment, Client client) {
+
+
+        List<Appointment> listappointment = new ArrayList<>();
+        Appointment appointment1 = appointment;
+        appointment1.setOwner(client);
+        listappointment.add(appointment1);
        // Add appointment to list
+
+
     }
 
+    public ArrayList<Client> getClients() {
+        return allClients;
+    }
+
+    public ArrayList<Appointment> getAppointments() {
+        return appointments;
+    }
 }

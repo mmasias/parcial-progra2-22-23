@@ -14,6 +14,10 @@ public class Appointment {
         this.description = description;
     }
 
+    public Appointment(Pet dog, CustomDate date, String vaccination) {
+
+    }
+
     @Override
     public String toString() {
         return "Appointment{" +

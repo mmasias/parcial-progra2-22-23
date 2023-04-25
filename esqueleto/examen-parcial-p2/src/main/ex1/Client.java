@@ -30,10 +30,23 @@ public class Client {
     public boolean equals (Client client2){
 
         Client cliente1 = new Client("daniel","Roldan", "Camare","874283");
+        String nombreCliente1 = cliente1.getName();
+        String surnameCliente1 = cliente1.getSurname();
 
-        if (cliente1.getFullName().equals(client2)){
+        client2 = new Client("daniel","Roldan","fads","05934");
+
+        if ((nombreCliente1== cliente1.getName()) && (surnameCliente1==client2.getSurname())){
+
             return true;
         }
         return false;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
     }
 }
