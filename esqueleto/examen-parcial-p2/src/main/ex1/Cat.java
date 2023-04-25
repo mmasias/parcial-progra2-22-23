@@ -7,6 +7,6 @@ public class Cat extends Pet {
 
     @Override
     String getName() {
-        return super.getName();
+        return this.name;
     }
 }

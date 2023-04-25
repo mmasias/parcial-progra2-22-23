@@ -7,6 +7,6 @@ public class Dog extends Pet{
 
     @Override
     String getName() {
-        return null;
+        return this.name;
     }
 }
