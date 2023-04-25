@@ -5,6 +5,7 @@ public class Client {
     String surname;
     String address;
     String phoneNumber;
+    int age;
 
     public Client(String name,String surname,String address,String phoneNumber) {
         this.name = name;
@@ -12,6 +13,10 @@ public class Client {
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
+
+    public Client(String name, int age, String color) {
+    }
+
     String getFullName(){
         return name + " " + surname;
     }

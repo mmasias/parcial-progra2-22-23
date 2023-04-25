@@ -29,7 +29,7 @@ public class ManagementSystem {
             String petName = tokens[1];
             int age = Integer.parseInt(tokens[2]);
             String color = tokens[3];
-            Client client = new Client(name);
+            Client client = new Client(name, age, color);
             client.wait(pet);
             clients.add(client);
         }

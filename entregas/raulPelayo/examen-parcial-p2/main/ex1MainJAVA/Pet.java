@@ -1,6 +1,6 @@
 package main.ex1;
 
-public abstract class Pet {
+public class Pet {
     protected String name;
     private int age;
     private String color;

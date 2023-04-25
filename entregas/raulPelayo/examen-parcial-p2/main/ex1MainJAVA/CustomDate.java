@@ -13,7 +13,7 @@ public class CustomDate {
     public String toString(){
         return day + "/" + month + "/" + year;
     }
-    String format(){
+    public String format(){
         return year + "-" + month + "-" + day;
     }
 }
