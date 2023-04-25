@@ -1,7 +1,8 @@
-package entregas.esparragozaVeronika.src.test.ex1;
+package entregas.esparragozaVeronika.src;
 
+import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import entregas.esparragozaVeronika.src.CustomDate;
 
 import static org.junit.jupiter.api.Assertions.*;
 

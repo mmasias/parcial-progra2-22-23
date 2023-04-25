@@ -10,10 +10,12 @@ public class CustomDate {
         this.month = month;
         this.year = year;
     }
-    public toString(){
-
+    public String toString(){
+        String dateToString = date+"/"+month+"/"+year;
+    return dateToString;
     }
-    public void format(String simbol){
-        formatDate.replace("/", simbol);
+    public String format(String simbol){
+        String dateFormat = toString().replace("/", simbol);
+        return dateFormat;
     }
 }
