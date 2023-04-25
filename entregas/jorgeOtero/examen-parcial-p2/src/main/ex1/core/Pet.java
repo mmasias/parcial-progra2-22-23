@@ -1,4 +1,4 @@
-package main.core;
+package main.ex1.core;
 
 abstract class Pet {
     private String name;

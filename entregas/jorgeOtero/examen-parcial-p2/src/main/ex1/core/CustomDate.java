@@ -1,4 +1,4 @@
-package main.core;
+package main.ex1.core;
 
 public class CustomDate {
     private int day;
@@ -11,5 +11,8 @@ public class CustomDate {
     }
     public String toString(){
         return this.day + "/" + this.month + "/" + this.year;
+    }
+    public String format(){
+        return "[ " + toString() + " ]";
     }
 }

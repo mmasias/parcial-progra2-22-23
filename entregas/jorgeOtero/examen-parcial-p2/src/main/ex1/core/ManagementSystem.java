@@ -1,9 +1,7 @@
-package main.core;
+package main.ex1.core;
 
-import main.utils.FileHandler;
+import main.ex1.utils.FileHandler;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ManagementSystem {
