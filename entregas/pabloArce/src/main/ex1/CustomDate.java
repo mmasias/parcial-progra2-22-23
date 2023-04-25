@@ -23,6 +23,5 @@ public class CustomDate {
             currentMonth = "0" + String.valueOf(this.month);
         }
         else{currentMonth = String.valueOf(this.month);}
-        return format.replace("dd", String.valueOf(this.day)).replace("mm", currentMonth).replace("yyyy", String.valueOf(this.year));
-    }
+        return (this.day + "-" + currentMonth + "-" + this.year);    }
 }
