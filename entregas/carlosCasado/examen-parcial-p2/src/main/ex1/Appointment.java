@@ -14,7 +14,7 @@ public class Appointment {
     }
 
     public String toString() {
-
+        return "[" + date + "]" + " - " + owner.getFullName() + " - " + pet.name + " - " + description;
     }
 
     public void setOwner(Client client) {

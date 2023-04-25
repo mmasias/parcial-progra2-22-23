@@ -8,12 +8,13 @@ import java.util.List;
 public class ManagementSystem {
     private FileHandler fileHandler;
     List<Client> clients = new ArrayList<>();
+    List<Appointment> appointments = new ArrayList<>();
 
     public ManagementSystem() {
     }
     public void loadData(String path) {
 
-    for (String rawDataPerClient: fileHandler.loadFileContent("data/clients.dat")) {
+    for (String rawDataPerClient: fileHandler.loadFileContent(path)) {
         String[] data = rawDataPerClient.split(";");
         String name = data[0].replaceAll("\"", "");
         String surname = data[1].replaceAll("\"", "");
@@ -24,26 +25,18 @@ public class ManagementSystem {
 
     }
 
-        /*
-            Load clients from file
-
-            // For each line in file
-
-            String[] data = line.split(";");
-
-             // Extract data from line and remove quotes
-            String name = data[0].replaceAll("\"", "");
-            String surname = data[1].replaceAll("\"", "");
-            String address = data[2].replaceAll("\"", "");
-            String phoneNumber = data[3].replaceAll("\"", "");
-
-
-            // Create client and add to list
-
-         */
     }
     public void addAppointment(Appointment appointment, Client client) {
-       // Add appointment to list
+       appointment.setOwner(client);
+       appointments.add(appointment);
+    }
+
+    public List<Appointment> getAppointments() {
+        return appointments;
+    }
+
+    public List<Client> getClients() {
+        return clients;
     }
 
 }

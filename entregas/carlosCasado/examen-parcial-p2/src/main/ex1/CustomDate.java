@@ -1,5 +1,7 @@
 package main.ex1;
 
+import org.junit.jupiter.api.DisplayNameGenerator;
+
 public class CustomDate {
 
     private int day;
@@ -13,11 +15,11 @@ public class CustomDate {
     }
 
     public String toString() {
-        if (day == )
+        return day + "/" + month + "/" + year;
     }
 
-    public String format(String) {
-
+    public String format(String symbol) {
+        return day + symbol + month + symbol + year;
     }
 
 }
