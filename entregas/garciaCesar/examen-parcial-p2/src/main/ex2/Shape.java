@@ -1,8 +1,13 @@
 package src.main.ex2;
 
 public class Shape {
-	String color;
-	boolean filled;
+	protected String color;
+	protected boolean filled;
+	public Shape(String color, boolean filled) {
+		this.color = color;
+		this.filled = filled;
+	}
+
 	public String getColor() {
 		return color;
 	}
@@ -15,9 +20,18 @@ public class Shape {
 	public void setFilled(boolean filled) {
 		this.filled = filled;
 	}
-	public abstract double getArea() {
+	public double getArea() {
 
+
+		return 0;
 	}
-	public abstract double getPerimeter();
+	public double getPerimeter(){
+
+		return 0;
+	}
+
+	public String toString() {
+		return "Shape [color=" + color + ", filled=" + filled + "]";
+	}
 
 }
