@@ -13,10 +13,20 @@ public class Circle extends Shape{
     public void setRadius(double radius) {
         this.radius = radius;
     }
-    public void getArea(){
 
+    public void getArea(){
+        double a;
+        a=Math.PI*radius*radius;
     }
     public void getPerimeter(){
+        double p;
+        p=2*radius*Math.PI;
+    }
 
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
     }
 }
