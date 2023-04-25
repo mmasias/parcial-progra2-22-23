@@ -19,4 +19,8 @@ public class Appointment {
     public void setOwner(Client owner) {
         this.owner = owner;
     }
+
+    public Client getOwner() {
+        return owner;
+    }
 }
