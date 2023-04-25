@@ -1,5 +1,7 @@
 package entregas.esparragozaVeronika.src.test.ex1;
 
+import entregas.esparragozaVeronika.src.Appointment;
+import entregas.esparragozaVeronika.src.main.ex1.CustomDate;
 import main.ex1.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

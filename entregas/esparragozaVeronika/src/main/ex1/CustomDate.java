@@ -15,7 +15,7 @@ public class CustomDate {
     return dateToString;
     }
     public String format(String simbol){
-        String dateFormat = toString().replace("/", simbol);
+        String dateFormat = toString().replaceAll("/", simbol);
         return dateFormat;
     }
 }

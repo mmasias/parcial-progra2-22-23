@@ -36,15 +36,4 @@ public class ManagementSystem {
         // Add appointment to list
     }
 
-
-
-
-
-    //    private FileHandler fileHandler;
- //   private List<Client> clients;
-    //private List<Appointment> appointments;
-
-    //public void String loadData() {
-        // ...
-   // }
 }
