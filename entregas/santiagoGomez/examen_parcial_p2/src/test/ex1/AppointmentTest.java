@@ -1,10 +1,10 @@
-package src.test.ex1.;
+package examen_parcial_p2.src.test.ex1;
 
-import main.ex1.*;
+import src.main.ex1.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AppointmentTest {
 
