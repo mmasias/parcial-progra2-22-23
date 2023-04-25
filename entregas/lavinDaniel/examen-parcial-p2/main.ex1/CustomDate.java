@@ -1,7 +1,7 @@
 public class CustomDate {
-    protected int day;
-    protected int month;
-    protected  int year;
+    private int day;
+    private int month;
+    private   int year;
 
     public CustomDate(int day, int month, int year) {
         this.day = day;
@@ -11,10 +11,9 @@ public class CustomDate {
 
     @Override
     public String toString() {
-        return "CustomDate{" +
-                "day=" + day +
-                ", month=" + month +
-                ", year=" + year +
-                '}';
+        return day +
+                "-" + month +
+                "-" + year ;
+
     }
 }
