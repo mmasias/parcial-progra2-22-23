@@ -1,10 +1,11 @@
 package src.main.ex1;
 
-public class CustomDate {
+public class CustomDate extends Pet {
 	private int day;
 	private int month;
 	private int year;
 	public CustomDate(int day, int month, int year) {
+		super(String.valueOf(day), String.valueOf(month), year);
 		this.day = day;
 		this.month = month;
 		this.year = year;

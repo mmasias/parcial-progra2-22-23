@@ -16,6 +16,18 @@ public class Appointment {
 	public void setOwner(Client owner) {
 		this.owner = owner;
 	}
+	public Client getOwner() {
+		return this.owner;
+	}
+	public Pet getPet() {
+		return this.pet;
+	}
+	public CustomDate getDate() {
+		return this.date;
+	}
+	public String getDescription() {
+		return this.description;
+	}
 
 
 }
