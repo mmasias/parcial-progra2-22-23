@@ -1,5 +1,3 @@
-package main.ex2;
-
 public class testex2 {
     public static void main(String[] args) {
         Circle c1 = new Circle(2.0, "blue", true);

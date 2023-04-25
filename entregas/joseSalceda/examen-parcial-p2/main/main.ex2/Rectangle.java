@@ -1,5 +1,3 @@
-package main.ex2;
-
 public class Rectangle extends Shape {
     protected double width;
     protected double length;

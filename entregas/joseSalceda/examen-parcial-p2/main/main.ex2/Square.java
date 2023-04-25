@@ -1,5 +1,3 @@
-package main.ex2;
-
 public class Square extends Rectangle {
     public Square() {
         super();
