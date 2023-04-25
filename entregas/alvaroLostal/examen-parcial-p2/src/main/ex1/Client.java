@@ -16,5 +16,5 @@ public class Client {
     public String getFullName() {
         return name+" "+surname;
     }
-    //boolean equals(Client)
+    //create public class: boolean equals(Client)
 }
