@@ -1,7 +1,10 @@
 package test.ex1;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import main.ex1.Client;
 
 class ClientTest {
 
@@ -13,6 +16,5 @@ class ClientTest {
 
         assertTrue(client1.equals(client2));
     }
-
 
 }
