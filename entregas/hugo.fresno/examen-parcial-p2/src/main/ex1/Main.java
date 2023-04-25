@@ -7,5 +7,7 @@ public class Main {
         CustomDate C = new CustomDate(10,2,2);
         System.out.println(C.toString());
 
+        System.out.println(C.format("25/04/2023"));
+
     }
 }

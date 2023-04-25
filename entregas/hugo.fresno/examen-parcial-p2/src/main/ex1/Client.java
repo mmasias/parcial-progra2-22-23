@@ -21,8 +21,14 @@ public class Client {
         return fullname;
     }
 
-     boolean equals(Client cliente0){
+     boolean equals(Client cliente){
 
-    return false;
+        boolean iguales = false;
+        Client ctemp;
+
+
+        //if (cliente.name.equalsIgnoreCase(cliente))
+
+    return iguales;
     }
 }

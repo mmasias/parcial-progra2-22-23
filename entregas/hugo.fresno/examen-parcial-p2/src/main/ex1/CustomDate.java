@@ -16,11 +16,29 @@ public class CustomDate {
 
         String toString;
 
-        toString="Dia "+date+"\nMes: "+month+"\nAño: "+year;
+        toString=date+"/"+month+"/"+year;
         return toString;
     }
 
     String format(String format){
-        return null;
+        char[]newFormat = format.toCharArray();
+        String separador="-";
+
+
+        String cero= String.valueOf(newFormat[0]);
+        String uno=String.valueOf(newFormat[1]);
+        String dos=String.valueOf(newFormat[3]);
+        String tres=String.valueOf(newFormat[4]);
+        String cuatro=String.valueOf(newFormat[6]);
+        String cinco=String.valueOf(newFormat[7]);
+        String seis=String.valueOf(newFormat[8]);
+        String siete=String.valueOf(newFormat[9]);
+
+        String finalFormat=cero+uno+separador+dos+tres+separador+cuatro+cinco+seis+siete;
+
+
+
+
+        return finalFormat;
     }
 }
