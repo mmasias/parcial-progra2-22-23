@@ -3,6 +3,8 @@ package test.ex1;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import main.ex1.CustomDate;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CustomDateTest {
