@@ -4,10 +4,13 @@ public class Client {
     String adress;
     String phoneNumber;
 
-    Client(String name, String surname, String adress, String phoneNumber) {
+    public Client(String name, String surname, String adress, String phoneNumber) {
 
     }
-
+    this.name=name;
+    this.surname=surname;
+    this.adress=adress;
+    this.phoneNumber=phoneNumber;
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -39,5 +42,9 @@ public class Client {
     public void setName(String name) {
         this.name = name;
 
+    }
+    
+    public boolean equals(Client obj) {
+        return super.equals(obj);
     }
 }
