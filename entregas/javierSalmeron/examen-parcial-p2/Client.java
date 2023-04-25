@@ -1,4 +1,4 @@
-// Client
+// Client - Tests OK
 
 public class Client {
     private String name;
