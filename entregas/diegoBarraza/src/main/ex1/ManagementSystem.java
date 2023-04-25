@@ -1,4 +1,4 @@
-package main.ex1;
+package entregas.diegoBarraza.src.main.ex1;
 
 import entregas.diegoBarraza.src.main.ex1.FileHandler;
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ManagementSystem {
+public class ManagementSystem extends FileHandler{
     private FileHandler fileHandler;
 
 
@@ -16,7 +16,7 @@ public class ManagementSystem {
 
     public void loadData(String path) {
 
-        for(String clients )
+        for(String clients:fileHandlerExample.loadFileContent()
 
 
         /*
