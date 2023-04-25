@@ -11,11 +11,18 @@ public class CustomDate {
     }
     public String toString() {
         String currentMonth;
-        if (this.day < 10) {
-            currentMonth = "0" + String.valueOf(this.day);
+        if (this.month < 10) {
+            currentMonth = "0" + String.valueOf(this.month);
         }
         else{currentMonth = String.valueOf(this.month);}
-        return this.day + "/" + currentMonth + "/" + this.year;
+        return (this.day + "/" + currentMonth + "/" + this.year);
     }
-    public String format(String format){return "hola";}
+    public String format(String format){
+        String currentMonth;
+        if (this.month < 10) {
+            currentMonth = "0" + String.valueOf(this.month);
+        }
+        else{currentMonth = String.valueOf(this.month);}
+        return format.replace("dd", String.valueOf(this.day)).replace("mm", currentMonth).replace("yyyy", String.valueOf(this.year));
+    }
 }

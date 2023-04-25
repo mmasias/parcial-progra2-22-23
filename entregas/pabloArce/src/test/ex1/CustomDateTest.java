@@ -1,11 +1,12 @@
 package test.ex1;
 
+import main.ex1.CustomDate;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/*class CustomDateTest {
+class CustomDateTest {
 
     @Test
     @DisplayName("Display the date in the format dd/mm/yyyy")
@@ -26,4 +27,4 @@ import static org.junit.jupiter.api.Assertions.*;
 
         assertEquals(expectedFormatedDate, actualFormatedDate);
     }
-}*/
+}
