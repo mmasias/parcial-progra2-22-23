@@ -16,7 +16,9 @@ public class CustomDate {
         return toString();
     }
 
-    String format(String) { //porque falla tambien el puto parentesis
-        return null;
+
+    public String format(String s) {
+
+        return this.format(s);
     }
 }

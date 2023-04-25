@@ -2,14 +2,20 @@ package main.ex1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 public class ManagementSystem {
     private FileHandler fileHandler;
 
+    public ManagementSystem() {
+
+    }
+
     private List<Client> clients(){
 
 
+        return null;
     }
 
     private List<Appointment> appointments(){
@@ -17,9 +23,6 @@ public class ManagementSystem {
         return null;
     }
 
-    public ManagementSystem(FileHandler fileHandler) {
-        this.fileHandler = fileHandler;
-    }
 
     public void loadData(String path) {
         /*
@@ -35,7 +38,7 @@ public class ManagementSystem {
          */
     }
     public void addAppointment(Appointment appointment, Client client) {
-       addAppointment("Laura");
+
     }
 
 
@@ -45,9 +48,12 @@ public class ManagementSystem {
         return null;
     }
 
-    private boolean isClient(Client){
+    private boolean isClient(){
 
         return this.isClient();
     }
 
+    public Collection<Object> getClients() {
+        return null;
+    }
 }

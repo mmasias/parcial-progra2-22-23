@@ -18,7 +18,7 @@ public class Appointment {
         return toString();
     }
 
-    public Client setOwner(){
+    public Client setOwner(Client client){
         return owner;
     }
 }

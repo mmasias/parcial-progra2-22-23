@@ -18,7 +18,7 @@ public class Client {
         return name; //falta el apellido
     }
 
-    boolean equals(Client) { //porque falla el parentesis??
+    boolean equals() { //porque falla el parentesis??
         return false;
     }
 
