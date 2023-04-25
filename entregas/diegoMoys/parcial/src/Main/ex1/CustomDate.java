@@ -1,9 +1,9 @@
 package Main.ex1;
 
 public class CustomDate {
-    protected int date;
-    protected int month;
-    protected int year;
+    private int date;
+    private int month;
+    private int year;
 
     public CustomDate(int date, int month, int year) {
         this.date = date;
@@ -14,4 +14,5 @@ public class CustomDate {
     public String dateToString() {
         return this.date + "/" + this.month + "/" + this.year;
     }
+
 }
