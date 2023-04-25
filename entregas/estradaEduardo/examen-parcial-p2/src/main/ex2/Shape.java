@@ -1,6 +1,13 @@
-abstract class Shape{
+package main.ex2;
+
+public abstract class Shape{
     protected String color;
     protected boolean filled;
+
+    public Shape(String color, boolean filled) {
+        this.color = color;
+        this.filled = filled;
+    }
 
     public String getColor() {
         return color;

@@ -1,17 +1,18 @@
-class Rectangle extends Shape{
+package main.ex2;
+
+public class Rectangle extends Shape{
     private double width;
     private double length;
 
-    public Rectangle(double width, double length){
-        this.width = width;
-        this.length = length;
+    public Rectangle(String color, boolean filled) {
+        super(color, filled);
     }
 
     public double getWidth(){
         return this.width;
     }
 
-    public double getLenght(){
+    public double getLength(){
         return this.length;
     }
 
@@ -19,7 +20,7 @@ class Rectangle extends Shape{
         this.width = width;
     }
 
-    public void setLenght(double height){
+    public void setLength(double length){
         this.length = length;
     }
 

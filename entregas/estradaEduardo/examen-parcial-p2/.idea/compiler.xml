@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/src/main/ex1/ManagementSystem.java" />
+      <file url="file://$PROJECT_DIR$/src/test/ex1/AppointmentTest.java" />
+      <file url="file://$PROJECT_DIR$/src/test/ex1/ClientTest.java" />
+      <file url="file://$PROJECT_DIR$/src/test/ex1/CustomDateTest.java" />
+      <file url="file://$PROJECT_DIR$/src/test/ex1/ManagementSystemTest.java" />
+    </excludeFromCompile>
+  </component>
+</project>

@@ -1,8 +1,10 @@
-class Circle extends Shape {
+package main.ex2;
+
+public class Circle extends Shape {
     private double radius;
 
-    public Circle(double radius) {
-        this.radius = radius;
+    public Circle(String color, boolean filled) {
+        super(color, filled);
     }
 
     public double getRadius() {
