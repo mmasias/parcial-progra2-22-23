@@ -1,5 +1,6 @@
 package test.ex1;
 
+import main.ex1.Client;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
