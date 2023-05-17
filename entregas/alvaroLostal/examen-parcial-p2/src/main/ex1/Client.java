@@ -14,9 +14,10 @@ public class Client {
     }
 
     public String getFullName() {
-        return name+" "+surname;
+        return name + " " + surname;
     }
 
-    public void addAppointment(Appointment appointment) {
+    public boolean equals(Client client) {
+        return client.getFullName().equals(this.getFullName());
     }
 }

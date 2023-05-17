@@ -6,14 +6,13 @@ public class Appointment {
     private CustomDate date;
     private String description;
 
-    public Appointment(Client owner, Pet pet, CustomDate date, String description) {
-        this.owner = owner;
+    public Appointment(Pet pet, CustomDate date, String description) {
         this.pet = pet;
         this.date = date;
         this.description = description;
     }
     public String toString() {
-        return "Appointment: "+date.toString()+"\n"+pet.toString()+"\n"+description;
+        return "["+date.toString()+"] - " + owner.getFullName() + " - " + pet.name + " - " + description;
     }
     public void setOwner(Client owner) {
         this.owner = owner;

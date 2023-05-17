@@ -6,42 +6,55 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ManagementSystem {
-    private List<Client> clients = new ArrayList<>();
+    private FileHandler fileHandler;
+    private List<Client> clients;
+    private List<Appointment> appointments;
+
     public ManagementSystem() {
         this.clients = new ArrayList<>();
+        this.fileHandler = new FileHandler();
+        this.appointments = new ArrayList<>();
+
     }
 
     public void loadData(String path) {
-
-        FileHandler fileHandler = new FileHandler();
-        List<String> listClients;
-        listClients = fileHandler.loadFileContent(path);
-        Client client;
+        List<String> listClients = fileHandler.loadFileContent(path);
         String name, surname, address, phoneNumber;
+        int cont=0;
         for (String line : listClients) {
             String[] lineData = line.split(";");
             name = lineData[0].replaceAll("\"", "");
             surname = lineData[1].replaceAll("\"", "");
             address = lineData[2].replaceAll("\"", "");
             phoneNumber = lineData[3].replaceAll("\"", "");
-            client = new Client(name, surname, address, phoneNumber);
-            this.clients.add(client);
-        }
-    }
-    public void addAppointment(Appointment appointment, Client client) {
-        if (client == null) {
-            System.err.println("Client is null");
-            return;
-        }
-        if (appointment == null) {
-            System.err.println("Appointment is null");
-            return;
-        }
-        if (this.clients.contains(client)) {
-            client.addAppointment(appointment);
-        } else {
-            System.err.println("Client not found");
+            Client client = new Client(name, surname, address, phoneNumber);
+            if(cont>0){
+                this.clients.add(client);
+            }
+            cont++;
+
         }
     }
 
+    public List<Client> getClients() {
+        return clients;
+    }
+
+    public List<Appointment> getAppointments() {
+        return appointments;
+    }
+
+    public void addAppointment(Appointment appointment, Client client) {
+        appointment.setOwner(client);
+        this.appointments.add(appointment);
+    }
+
+    boolean isClient(Client client) {
+        for (Client c : this.clients) {
+            if (c.equals(client)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -1,6 +1,6 @@
 package main.ex1;
 
-public class Pet {
+public abstract class Pet {
     protected String name;
     protected String color;
     protected int age;
@@ -11,7 +11,5 @@ public class Pet {
         this.age = age;
     }
 
-    public String getName() {
-        return name;
-    }
+    public abstract String getName();
 }
