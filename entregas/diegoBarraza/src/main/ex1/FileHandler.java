@@ -1,4 +1,4 @@
-package main.ex1;
+package entregas.diegoBarraza.src.main.ex1;
 
 import java.io.*;
 import java.util.ArrayList;

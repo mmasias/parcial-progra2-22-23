@@ -36,12 +36,12 @@ mascotas, según se especifica en el diagrama de clases proporcionado. El sistem
 desde un archivo utilizando la clase `FileHandler`, y debe pasar todas las pruebas proporcionadas. Con esta solución, 
 la veterinaria "Mascotas Felices" podrá mejorar la gestión de sus citas y clientes, logrando una mayor eficiencia en su funcionamiento.
 
-Implementar las funcionalidades basándonos en el [diagrama UML](esqueleto/examen-parcial-p2/src/main/ex1/ex1-0.png) planteado para que los tests pasen satisfactoriamente 
+Implementar las funcionalidades basándonos en el [diagrama UML](entregas/diegoBarraza/src/main/ex1/ex1-0.png) planteado para que los tests pasen satisfactoriamente 
 desarrolladas en el paquete **test.ex1**. 
 > Puede cambiar/agregar en las clases lo que considere oportuno para la resolución del ejercicio.
 
 ### Diagrama de clases:
-[![](esqueleto/examen-parcial-p2/src/main/ex1/ex1-0.png)](esqueleto/examen-parcial-p2/src/main/ex1/ex1.puml)
+[![](entregas/diegoBarraza/src/main/ex1/ex1-0.png)](entregas/diegoBarraza/src/main/ex1/ex1.puml)
 
 > Los siguientes test los encontrará en el paquete `test.ex1`
 
@@ -123,7 +123,7 @@ Salida esperada:
 
 Implemente la superclase `Shape` y sus subclases `Circle`, `Rectangle` y `Square`, como se muestra en el diagrama de clases.
 ### Diagrama de clases:
-[![](esqueleto/examen-parcial-p2/src/main/ex2/ex2.png)](esqueleto/examen-parcial-p2/src/main/ex2/ex2.puml)
+[![](entregas/diegoBarraza/src/main/ex2/ex2.png)](entregas/diegoBarraza/src/main/ex2/ex2.puml)
 
 > `Shape` es una clase abstracta que contiene 2 métodos abstractos: `getArea()` y `getPerimeter()`, donde sus subclases 
 > concretas deben proporcionar su implementación. Todas las variables de instancia tendrán acceso protegido, es decir, 
