@@ -8,6 +8,7 @@ import main.Client;
 import test.Appointment;
 
 public class ManagementSystem {
+    
     private FileHandler fileHandler;
 
     public ManagementSystem() {
