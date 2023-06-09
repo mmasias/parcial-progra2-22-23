@@ -1,4 +1,6 @@
 {
+    "java.debug.settings.onBuildFailureProceed": true
+
     "java.project.sourcePaths": [
         "esqueleto/examen-parcial-p2/src",
         "entregas/joseSalceda/examen-parcial-p2/main/main.ex2"
