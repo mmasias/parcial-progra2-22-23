@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>FileHandler.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+FileHandler.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">main.ex1</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">java.io.*</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.ArrayList</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.List</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">FileHandler {</span>
+    <span class="s0">private </span><span class="s1">List&lt;String&gt; lines</span><span class="s0">;</span>
+
+    <span class="s0">public </span><span class="s1">FileHandler(){</span>
+        <span class="s0">this</span><span class="s1">.lines = </span><span class="s0">new </span><span class="s1">ArrayList&lt;&gt;()</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">List&lt;String&gt; loadFileContent(String path) {</span>
+        <span class="s0">if </span><span class="s1">(isPathEmpty(path)) {</span>
+            <span class="s1">System.err.println(</span><span class="s2">&quot;Path is empty&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s0">return null;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">File file = </span><span class="s0">new </span><span class="s1">File(path)</span><span class="s0">;</span>
+        <span class="s0">if </span><span class="s1">(!file.exists()) {</span>
+            <span class="s1">System.err.println(</span><span class="s2">&quot;File not found&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s0">return null;</span>
+        <span class="s1">}</span>
+
+        <span class="s0">return </span><span class="s1">readFileContent(path)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private boolean </span><span class="s1">isPathEmpty(String path) {</span>
+        <span class="s0">return </span><span class="s1">path.isEmpty()</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">private </span><span class="s1">List&lt;String&gt; readFileContent(String path) {</span>
+        <span class="s1">BufferedReader input = </span><span class="s0">null;</span>
+        <span class="s0">try </span><span class="s1">{</span>
+            <span class="s1">input = </span><span class="s0">new </span><span class="s1">BufferedReader(</span><span class="s0">new </span><span class="s1">FileReader(path))</span><span class="s0">;</span>
+            <span class="s0">try </span><span class="s1">{</span>
+                <span class="s1">String line</span><span class="s0">;</span>
+                <span class="s0">while </span><span class="s1">((line = input.readLine()) != </span><span class="s0">null</span><span class="s1">) {</span>
+                    <span class="s0">this</span><span class="s1">.lines.add(line)</span><span class="s0">;</span>
+                <span class="s1">}</span>
+            <span class="s1">} </span><span class="s0">catch </span><span class="s1">(IOException e) {</span>
+                <span class="s1">System.err.println(</span><span class="s2">&quot;Error reading file&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">} </span><span class="s0">catch </span><span class="s1">(FileNotFoundException e) {</span>
+            <span class="s1">System.err.println(</span><span class="s2">&quot;File not found&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">finally </span><span class="s1">{</span>
+            <span class="s0">if </span><span class="s1">(input != </span><span class="s0">null</span><span class="s1">) {</span>
+                <span class="s0">try </span><span class="s1">{</span>
+                    <span class="s1">input.close()</span><span class="s0">;</span>
+                <span class="s1">} </span><span class="s0">catch </span><span class="s1">(IOException e) {</span>
+                    <span class="s1">System.err.println(</span><span class="s2">&quot;Error closing file&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+        <span class="s0">return this</span><span class="s1">.lines</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
